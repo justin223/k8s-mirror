@@ -1,3 +1,3 @@
-FROM k8s.gcr.io/coredns:1.6.7
+FROM registry.k8s.io/coredns/coredns:v1.11.3
 
-MAINTAINER justin223_chn@163.com
+MAINTAINER justin223_chn@outlook.com

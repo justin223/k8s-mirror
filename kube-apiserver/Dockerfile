@@ -1,3 +1,3 @@
-FROM k8s.gcr.io/kube-apiserver:v1.18.3
+FROM registry.k8s.io/kube-apiserver:v1.32.2
 
-MAINTAINER justin223_chn@163.com
+MAINTAINER justin223_chn@outlook.com

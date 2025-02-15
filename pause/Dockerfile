@@ -1,3 +1,3 @@
-FROM k8s.gcr.io/pause:3.2
+FROM registry.k8s.io/pause:3.10
 
-MAINTAINER justin223_chn@163.com
+MAINTAINER justin223_chn@outlook.com

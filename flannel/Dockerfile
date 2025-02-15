@@ -1,3 +1,3 @@
-FROM quay.io/coreos/flannel:v0.12.0-amd64
+FROM quay.io/coreos/flannel:v0.26.4
 
-MAINTAINER justin223_chn@163.com
+MAINTAINER justin223_chn@outlook.com
