@@ -33,21 +33,18 @@ jobs:
           - dockerfile: ./etcd/Dockerfile
             image: ghcr.io/${{ github.actor }}/etcd
             tag: 3.5.16-0
-          - dockerfile: ./flannel/Dockerfile
-            image: ghcr.io/${{ github.actor }}/flannel
-            tag: v0.26.4
           - dockerfile: ./kube-apiserver/Dockerfile
             image: ghcr.io/${{ github.actor }}/kube-apiserver
-            tag: v1.32.2
+            tag: v1.32.1
           - dockerfile: ./kube-controller-manager/Dockerfile
             image: ghcr.io/${{ github.actor }}/kube-controller-manager
-            tag: v1.32.2
+            tag: v1.32.1
           - dockerfile: ./kube-proxy/Dockerfile
             image: ghcr.io/${{ github.actor }}/kube-proxy
-            tag: v1.32.2
+            tag: v1.32.1
           - dockerfile: ./kube-scheduler/Dockerfile
             image: ghcr.io/${{ github.actor }}/kube-scheduler
-            tag: v1.32.2
+            tag: v1.32.1
           - dockerfile: ./pause/Dockerfile
             image: ghcr.io/${{ github.actor }}/pause
             tag: 3.10
