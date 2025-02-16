@@ -28,21 +28,21 @@ jobs:
       matrix:
         include:
           - dockerfile: ./coredns/Dockerfile
-            image: ${{ REGISTRY }}/${{ github.actor }}/coredns:v1.11.3
+            image: ${{ env.REGISTRY }}/${{ github.actor }}/coredns:v1.11.3
           - dockerfile: ./etcd/Dockerfile
-            image: ${{ REGISTRY }}/${{ github.actor }}/etcd:3.5.16-0
+            image: ${{ env.REGISTRY }}/${{ github.actor }}/etcd:3.5.16-0
           - dockerfile: ./flannel/Dockerfile
-            image: ${{ REGISTRY }}/${{ github.actor }}/flannel:v0.26.4
+            image: ${{ env.REGISTRY }}/${{ github.actor }}/flannel:v0.26.4
           - dockerfile: ./kube-apiserver/Dockerfile
-            image: ${{ REGISTRY }}/${{ github.actor }}/kube-apiserver:v1.32.2
+            image: ${{ env.REGISTRY }}/${{ github.actor }}/kube-apiserver:v1.32.2
           - dockerfile: ./kube-controller-manager/Dockerfile
-            image: ${{ REGISTRY }}/${{ github.actor }}/kube-controller-manager:v1.32.2
+            image: ${{ env.REGISTRY }}/${{ github.actor }}/kube-controller-manager:v1.32.2
           - dockerfile: ./kube-proxy/Dockerfile
-            image: ${{ REGISTRY }}/${{ github.actor }}/kube-proxy:v1.32.2
+            image: ${{ env.REGISTRY }}/${{ github.actor }}/kube-proxy:v1.32.2
           - dockerfile: ./kube-scheduler/Dockerfile
-            image: ${{ REGISTRY }}/${{ github.actor }}/kube-scheduler:v1.32.2
+            image: ${{ env.REGISTRY }}/${{ github.actor }}/kube-scheduler:v1.32.2
           - dockerfile: ./pause/Dockerfile
-            image: ${{ REGISTRY }}/${{ github.actor }}/pause:3.10
+            image: ${{ env.REGISTRY }}/${{ github.actor }}/pause:3.10
 
 
     permissions:
