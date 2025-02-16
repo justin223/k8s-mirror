@@ -28,28 +28,28 @@ jobs:
       matrix:
         include:
           - dockerfile: ./coredns/Dockerfile
-            image: ghcr.io/${{ github.actor }}/coredns:v1.11.3
+            image: ghcr.io/${{ github.actor }}/coredns
             tag: v1.11.3
           - dockerfile: ./etcd/Dockerfile
-            image: ghcr.io/${{ github.actor }}/etcd:3.5.16-0
+            image: ghcr.io/${{ github.actor }}/etcd
             tag: 3.5.16-0
           - dockerfile: ./flannel/Dockerfile
-            image: ghcr.io/${{ github.actor }}/flannel:v0.26.4
+            image: ghcr.io/${{ github.actor }}/flannel
             tag: v0.26.4
           - dockerfile: ./kube-apiserver/Dockerfile
-            image: ghcr.io/${{ github.actor }}/kube-apiserver:v1.32.2
+            image: ghcr.io/${{ github.actor }}/kube-apiserver
             tag: v1.32.2
           - dockerfile: ./kube-controller-manager/Dockerfile
-            image: ghcr.io/${{ github.actor }}/kube-controller-manager:v1.32.2
+            image: ghcr.io/${{ github.actor }}/kube-controller-manager
             tag: v1.32.2
           - dockerfile: ./kube-proxy/Dockerfile
-            image: ghcr.io/${{ github.actor }}/kube-proxy:v1.32.2
+            image: ghcr.io/${{ github.actor }}/kube-proxy
             tag: v1.32.2
           - dockerfile: ./kube-scheduler/Dockerfile
-            image: ghcr.io/${{ github.actor }}/kube-scheduler:v1.32.2
+            image: ghcr.io/${{ github.actor }}/kube-scheduler
             tag: v1.32.2
           - dockerfile: ./pause/Dockerfile
-            image: ghcr.io/${{ github.actor }}/pause:3.10
+            image: ghcr.io/${{ github.actor }}/pause
             tag: 3.10
 
     permissions:
